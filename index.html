@@ -23,6 +23,17 @@
 	    			height: 74px;
 	   			 	line-height: 64px;
 			}
+			nav ul a{
+			    background-color: #f25724;
+			    margin-left: 2px;
+			}
+			.menu-principal{
+				margin-top: 3px; 
+			}
+			ul.menu-principal li a i.material-icons{
+				float:left;
+				margin-right:4px;
+			}
         </style>
     </head>
     <body>
@@ -30,42 +41,104 @@
             <nav class="mi-nav">
                 <div class="nav-wrapper">
                     <a class="brand-logo" href="#!">
-                        <img alt="" src="img/logo.png">
-                        </img>
+                        <img alt="" src="img/logo.png"/>
                     </a>
-                    <ul class="right hide-on-med-and-down">
+                    <a class="button-collapse" data-activates="mobile-demo" href="#">
+                        <i class="material-icons">
+                            menu
+                        </i>
+                    </a>
+                    <ul class="menu-principal right hide-on-med-and-down">
                         <li>
-                            <a href="sass.html">
+                            <a class="primero" href="sass.html">
+                                <i class="material-icons">
+                                    home
+                                </i>
                                 Inicio
                             </a>
                         </li>
                         <li>
-                            <a href="badges.html">
+                            <a class="segundo" href="badges.html">
+                                <i class="material-icons">
+                                    people
+                                </i>
                                 Quienes somos
                             </a>
                         </li>
                         <li>
-                            <a href="sass.html">
+                            <a class="tercero" href="sass.html">
+                                <i class="material-icons">
+                                    settings
+                                </i>
                                 Servicios
                             </a>
                         </li>
                         <li>
-                            <a href="badges.html">
+                            <a class="cuarto" href="badges.html">
+                                <i class="material-icons">
+                                    location_on
+                                </i>
                                 Eventos
                             </a>
                         </li>
                         <li>
-                            <a href="sass.html">
+                            <a class="quinto" href="sass.html">
+                                <i class="material-icons">
+                                    arrow_downward
+                                </i>
                                 Descarga
                             </a>
                         </li>
                         <li>
-                            <a href="badges.html">
+                            <a class="sexto" href="badges.html">
+                                <i class="material-icons">
+                                    call
+                                </i>
                                 Contacto
                             </a>
                         </li>
                         <li>
-                            <a href="badges.html">
+                            <a class="septimo" href="badges.html">
+                                <i class="material-icons">
+                                    work
+                                </i>
+                                Bolsa de trabajo
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li>
+                            <a class="primero" href="sass.html">
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a class="segundo" href="badges.html">
+                                Quienes somos
+                            </a>
+                        </li>
+                        <li>
+                            <a class="tercero" href="sass.html">
+                                Servicios
+                            </a>
+                        </li>
+                        <li>
+                            <a class="cuarto" href="badges.html">
+                                Eventos
+                            </a>
+                        </li>
+                        <li>
+                            <a class="quinto" href="sass.html">
+                                Descarga
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sexto" href="badges.html">
+                                Contacto
+                            </a>
+                        </li>
+                        <li>
+                            <a class="septimo" href="badges.html">
                                 Bolsa de trabajo
                             </a>
                         </li>
@@ -78,90 +151,93 @@
                 <img src="http://itfase.com.mx/wp-content/uploads/2016/08/Dise%C3%B1oSoftware.jpg"/>
             </div>
         </div>
-        <div class="carousel carousel-slider center" data-indicators="true">
-            <div class="carousel-fixed-item center">
-                <a class="btn waves-effect white grey-text darken-text-2">
-                    button
-                </a>
-            </div>
-            <div class="carousel-item red white-text" href="#one!">
-                <h2>
-                    First Panel
+        <div class="section white">
+            <div class="row container">
+                <h2 class="header">
+                    Facturación electrónica – FEL
                 </h2>
-                <p class="white-text">
-                    This is your first panel
-                </p>
-            </div>
-            <div class="carousel-item amber white-text" href="#two!">
-                <h2>
-                    Second Panel
-                </h2>
-                <p class="white-text">
-                    This is your second panel
-                </p>
-            </div>
-            <div class="carousel-item green white-text" href="#three!">
-                <h2>
-                    Third Panel
-                </h2>
-                <p class="white-text">
-                    This is your third panel
-                </p>
-            </div>
-            <div class="carousel-item blue white-text" href="#four!">
-                <h2>
-                    Fourth Panel
-                </h2>
-                <p class="white-text">
-                    This is your fourth panel
-                </p>
+                <div class="col s5">
+                    <img alt="" class="responsive-img" src="http://itfase.com.mx/wp-content/uploads/2016/08/Facturacion.jpg">
+                    </img>
+                </div>
+                <div class="col s7">
+                    <p class="grey-text text-darken-3 lighten-3">
+                        Facturación electrónica – FEL.  Somos distribuidores autorizados de Facturación Electrónica por FEL, teniendo la certificación para proporcionar el servicio de Facturación y la asesoría fiscal necesaria para esta actividad. Ofrecemos el servicio de facturación electrónica por portal o conexión remota, con el fin de incluirlos en nuestros sistemas informáticos para que nuestros clientes tenga la certeza de cumplir con lo que la ley fiscal marca, así como un mayor control de sus ventas. Pregunta también por nuestros servicios contables
+                    </p>
+                </div>
             </div>
         </div>
-        <footer class="page-footer #212121 grey darken-4">
+        <div class="fixed-action-btn vertical">
+            <a class="btn-floating btn-large red">
+                <i class="large material-icons">
+                    mode_edit
+                </i>
+            </a>
+            <ul>
+                <li>
+                    <a class="btn-floating red">
+                        <i class="material-icons">
+                            insert_chart
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating yellow darken-1">
+                        <i class="material-icons">
+                            format_quote
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating green">
+                        <i class="material-icons">
+                            publish
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn-floating blue">
+                        <i class="material-icons">
+                            attach_file
+                        </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <footer class="page-footer">
             <div class="container">
                 <div class="row">
-                    <div class="col l6 s12">
+                    <div class="col l4 s12">
                         <h5 class="white-text">
-                            Footer Content
+                            Help Materialize Grow
                         </h5>
                         <p class="grey-text text-lighten-4">
-                            You can use rows and columns here to organize your footer content.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae iure, dolores, facere, sequi, hic vero minus voluptatum culpa numquam necessitatibus beatae aspernatur odio veritatis. Consequatur, non, numquam. Ab, adipisci, labore.
                         </p>
                     </div>
-                    <div class="col l4 offset-l2 s12">
+                    <div class="col l4 s12">
                         <h5 class="white-text">
-                            Links
+                            Join the Discussion
                         </h5>
-                        <ul>
-                            <li>
-                                <a class="grey-text text-lighten-3" href="#!">
-                                    Link 1
-                                </a>
-                            </li>
-                            <li>
-                                <a class="grey-text text-lighten-3" href="#!">
-                                    Link 2
-                                </a>
-                            </li>
-                            <li>
-                                <a class="grey-text text-lighten-3" href="#!">
-                                    Link 3
-                                </a>
-                            </li>
-                            <li>
-                                <a class="grey-text text-lighten-3" href="#!">
-                                    Link 4
-                                </a>
-                            </li>
-                        </ul>
+                        <p class="grey-text text-lighten-4">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, cumque maxime fuga libero iure officia ut ducimus ad, mollitia voluptates culpa. Quia autem tenetur, iusto ducimus exercitationem voluptate. Aperiam, cupiditate!
+                        </p>
+                    </div>
+                    <div class="col l4 s12" style="overflow: hidden;">
+                        <h5 class="white-text">
+                            Connect
+                        </h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit molestias aperiam at, maiores, expedita cum ipsum odio fugiat asperiores nisi laudantium, repudiandae nobis magni. Ea voluptatem esse, sit id molestias.
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="footer-copyright">
                 <div class="container">
-                    © 2014 Copyright Text
-                    <a class="grey-text text-lighten-4 right" href="#!">
-                        More Links
+                    © 2014-2016 Materialize, All rights reserved.
+                    <a class="grey-text text-lighten-4 right" href="https://github.com/Dogfalo/materialize/blob/master/LICENSE">
+                        MIT License
                     </a>
                 </div>
             </div>
@@ -174,6 +250,7 @@
             $(document).ready(function() {
             	 $('.carousel.carousel-slider').carousel({full_width: true});
             	 $('.parallax').parallax();
+            	 $(".button-collapse").sideNav();
     		});
         </script>
     </body>
