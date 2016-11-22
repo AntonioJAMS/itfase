@@ -1,0 +1,17 @@
+commit 275b52ac206d631537146b739f5138360fa98f73
+Author: antonio medina <garras021@gmail.com>
+Date:   Tue Nov 22 12:01:08 2016 -0600
+
+    Agregando contenido pagina index
+
+commit 339a519b4a4f42a5c8ec36bba4bf3047dd939aa3
+Author: antonio medina <garras021@gmail.com>
+Date:   Tue Nov 22 01:29:41 2016 -0600
+
+    Agregando el logo
+
+commit bc7c7b87e8ab15c18c627aaa285226fc16c42afa
+Author: antonio medina <garras021@gmail.com>
+Date:   Mon Nov 21 13:06:46 2016 -0600
+
+    Iniciando Plantilla
