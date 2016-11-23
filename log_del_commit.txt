@@ -1,3 +1,9 @@
+commit f26ada8a873180e814a483774ce6a8f4425bf81b
+Author: antonio medina <garras021@gmail.com>
+Date:   Tue Nov 22 13:37:46 2016 -0600
+
+    terminado disenio index
+
 commit 275b52ac206d631537146b739f5138360fa98f73
 Author: antonio medina <garras021@gmail.com>
 Date:   Tue Nov 22 12:01:08 2016 -0600
