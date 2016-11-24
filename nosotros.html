@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>
+            ITFase
+        </title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" rel="stylesheet"/>
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <style>
+            .mi-nav{
+                background-color: #fafafa;
+            }
+            @media only screen and (min-width: 401px){
+                nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+
+                    height: 74px;
+                    line-height: 64px;
+            }
+            nav ul a{
+                background-color: #f25724;
+                margin-left: 2px;
+            }
+            .menu-principal{
+                margin-top: 3px; 
+            }
+            ul.menu-principal li a i.material-icons{
+                float:left;
+                margin-right:4px;
+            }
+            .tamanio-parallax1{
+                height: 450px;
+            }
+            .tamanio-parallax2{
+                height: 300px;
+            }
+            footer.page-footer{
+                background-color: #212121;
+            }
+            @media only screen 
+              and (min-device-width: 375px) 
+              and (max-device-width: 667px) 
+              and (-webkit-min-device-pixel-ratio: 2) { 
+                nav .button-collapse i {
+                    height: 56px;
+                    line-height: 56px;
+                    background: #008bd4;
+                    padding: 0px 13px 0px 13px;
+
+                }
+            }
+
+            @media (min-width: 480px) and (max-width: 767px){
+                nav .button-collapse i {
+                    height: 56px;
+                    line-height: 56px;
+                    background: #008bd4;
+                     padding: 0px 13px 0px 13px;
+
+                }
+            }
+            
+            /*nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {i.material-icons{
+                background-color: #008bd4;
+                padding: 0px 13px 0px 13px;
+            }*/
+        </style>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav class="mi-nav">
+                <div class="nav-wrapper">
+                    <a class="brand-logo" href="#!">
+                        <img alt="" src="img/logo.png"/>
+                    </a>
+                    <a class="button-collapse" data-activates="mobile-demo" href="#">
+                        <i class="boton-desplegar material-icons">
+                            menu
+                        </i>
+                    </a>
+                    <ul class="menu-principal right hide-on-med-and-down">
+                        <li>
+                            <a class="primero" href="sass.html">
+                                <i class="material-icons">
+                                    home
+                                </i>
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a class="segundo" href="badges.html">
+                                <i class="material-icons">
+                                    people
+                                </i>
+                                Quienes somos
+                            </a>
+                        </li>
+                        <li>
+                            <a class="tercero" href="sass.html">
+                                <i class="material-icons">
+                                    settings
+                                </i>
+                                Servicios
+                            </a>
+                        </li>
+                        <li>
+                            <a class="cuarto" href="badges.html">
+                                <i class="material-icons">
+                                    location_on
+                                </i>
+                                Eventos
+                            </a>
+                        </li>
+                        <li>
+                            <a class="quinto" href="sass.html">
+                                <i class="material-icons">
+                                    arrow_downward
+                                </i>
+                                Descarga
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sexto" href="contacto.html">
+                                <i class="material-icons">
+                                    call
+                                </i>
+                                Contacto
+                            </a>
+                        </li>
+                        <li>
+                            <a class="septimo" href="badges.html">
+                                <i class="material-icons">
+                                    work
+                                </i>
+                                Bolsa de trabajo
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li>
+                            <a class="primero" href="sass.html">
+                                <i class="material-icons">
+                                    home
+                                </i>
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a class="segundo" href="badges.html">
+                                <i class="material-icons">
+                                    people
+                                </i>
+                                Quienes somos
+                            </a>
+                        </li>
+                        <li>
+                            <a class="tercero" href="sass.html">
+                                <i class="material-icons">
+                                    settings
+                                </i>
+                                Servicios
+                            </a>
+                        </li>
+                        <li>
+                            <a class="cuarto" href="badges.html">
+                                <i class="material-icons">
+                                    location_on
+                                </i>
+                                Eventos
+                            </a>
+                        </li>
+                        <li>
+                            <a class="quinto" href="sass.html">
+                                <i class="material-icons">
+                                    arrow_downward
+                                </i>
+                                Descarga
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sexto" href="badges.html">
+                                <i class="material-icons">
+                                    call
+                                </i>
+                                Contacto
+                            </a>
+                        </li>
+                        <li>
+                            <a class="septimo" href="badges.html">
+                                <i class="material-icons">
+                                    work
+                                </i>
+                                Bolsa de trabajo
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="section white">
+            <div class="row container">
+                <h3 class="header">
+                    Quienes Somos
+                </h3>
+                <div class="col s12">
+                    <img alt="" class="responsive-img" src="http://itfase.com.mx/wp-content/uploads/2016/08/Nufondo05.jpg">
+                    </img>
+                </div>
+                <div class="col s12">
+                    <p class="mi-texto grey-text text-darken-3 lighten-3">
+                        ITFASE S.A de C.V. es una empresa dedicada a generar soluciones en el ramo de Tecnologías de Información, contando con 10 años de experiencia en los que ha evolucionado de acuerdo al desarrollo tecnológico y las necesidades de nuestros clientes, generando servicios de calidad implementados por nuestro personal especializado.
+                    </p>
+                    <h4>
+                        Misión
+                    </h4>
+                    <p>
+                        Proporcionar soluciones integrales de acuerdo a las necesidades de  cada empresa, basadas en el desarrollo de sistemas tecnológicos, buscando  optimizar recursos y procesos productivos creando plataformas sólidas que potencialicen el desarrollo de nuestros clientes.
+                    </p>
+                    <h4>
+                        Visión
+                    </h4>
+                    <p>
+                        Ser una empresa reconocida a nivel nacional por brindar un servicio enfocado al desarrollo de herramientas tecnológicas, permitiendo a nuestros clientes una mejora continua mediante   procesos específicos que contribuyan al crecimiento constante de la empresa.
+                    </p>
+                    <h4>
+                        Nuestros Valores
+                    </h4>
+                    <ul>
+                        <li>
+                            Honestidad.
+                        </li>
+                        <li>
+                            Calidad.
+                        </li>
+                        <li>
+                            Servicio.
+                        </li>
+                        <li>
+                            Responsabilidad.
+                        </li>
+                        <li>
+                            Innovación y renovación.
+                        </li>
+                        <li>
+                            Reconocer, valorar y desarrollar el potencial de nuestro equipo humano.
+                        </li>
+                        <li>
+                            Mejora continua para satisfacer las necesidades y exceder las expectativas de nuestros clientes.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fixed-action-btn vertical">
+                <a class="btn-floating btn-large red">
+                    <i class="large material-icons">
+                        mode_edit
+                    </i>
+                </a>
+                <ul>
+                    <li>
+                        <a class="btn-floating red" href="https://www.facebook.com/IT-Fase-180015298853191/?fref=ts" target="_blank">
+                            <img alt="" src="http://appform.heraldo.es/img/icon_facebook_40.png"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating yellow darken-1">
+                            <img alt="" src="http://appform.heraldo.es/img/icon_twitter_40.png"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating green">
+                            <img alt="" src="https://es.drvsistemas.com/wp-content/uploads/2015/03/googleplus.png"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating blue">
+                            <img alt="" src="http://cgsm.org/wp-content/uploads/2016/03/linkedin.jpg"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <footer class="page-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l4 s12">
+                            <h5 class="white-text">
+                                Lorem ipsum dolor sit amet
+                            </h5>
+                            <p class="grey-text text-lighten-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae iure, dolores, facere, sequi, hic vero minus voluptatum culpa numquam necessitatibus beatae aspernatur odio veritatis. Consequatur, non, numquam. Ab, adipisci, labore.
+                            </p>
+                        </div>
+                        <div class="col l4 s12">
+                            <h5 class="white-text">
+                                Lorem ipsum dolor sit amet
+                            </h5>
+                            <p class="grey-text text-lighten-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae iure, dolores, facere, sequi, hic vero minus voluptatum culpa numquam necessitatibus beatae aspernatur odio veritatis. Consequatur, non, numquam. Ab, adipisci, labore.
+                            </p>
+                        </div>
+                        <div class="col l4 s12">
+                            <h5 class="white-text">
+                                Lorem ipsum dolor sit amet
+                            </h5>
+                            <p class="grey-text text-lighten-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae iure, dolores, facere, sequi, hic vero minus voluptatum culpa numquam necessitatibus beatae aspernatur odio veritatis. Consequatur, non, numquam. Ab, adipisci, labore.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        © 2014-2016 Materialize, All rights reserved.
+                        <a class="grey-text text-lighten-4 right" href="https://github.com/Dogfalo/materialize/blob/master/LICENSE">
+                            MIT License
+                        </a>
+                    </div>
+                </div>
+            </footer>
+            <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript">
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js">
+            </script>
+            <script>
+                $(document).ready(function() {
+                 $('.carousel.carousel-slider').carousel({full_width: true});
+                 $('.parallax').parallax();
+                 $(".button-collapse").sideNav();
+            });
+            </script>
+        </div>
+    </body>
+</html>
