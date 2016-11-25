@@ -10,34 +10,74 @@
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
         <style>
             .mi-nav{
-        		background-color: #fafafa;
-        	}
-        	@media only screen and (min-width: 601px){
-				nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+                background-color: #fafafa;
+            }
+            @media only screen and (min-width: 401px){
+                nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 
-	    			height: 74px;
-	   			 	line-height: 64px;
-			}
-			nav ul a{
-			    background-color: #f25724;
-			    margin-left: 2px;
-			}
-			.menu-principal{
-				margin-top: 3px; 
-			}
-			ul.menu-principal li a i.material-icons{
-				float:left;
-				margin-right:4px;
-			}
-			.tamanio-parallax1{
-				height: 450px;
-			}
-			.tamanio-parallax2{
-				height: 300px;
-			}
-			footer.page-footer{
-				background-color: #212121;
-			}
+                    height: 74px;
+                    line-height: 64px;
+            }
+            nav ul a{
+                background-color: #f25724;
+                margin-left: 2px;
+            }
+            .menu-principal{
+                margin-top: 3px; 
+            }
+            ul.menu-principal li a i.material-icons{
+                float:left;
+                margin-right:4px;
+            }
+            .tamanio-parallax1{
+                height: 450px;
+            }
+            .tamanio-parallax2{
+                height: 300px;
+            }
+            footer.page-footer{
+                background-color: #212121;
+            }
+            @media only screen 
+              and (min-device-width: 375px) 
+              and (max-device-width: 667px) 
+              and (-webkit-min-device-pixel-ratio: 2) { 
+                nav .button-collapse i {
+                    height: 56px;
+                    line-height: 56px;
+                    background: #008bd4;
+                    padding: 0px 13px 0px 13px;
+
+                }
+            }
+
+            @media (min-width: 480px) and (max-width: 767px){
+                nav .button-collapse i {
+                    height: 56px;
+                    line-height: 56px;
+                    background: #008bd4;
+                    padding: 0px 13px 0px 13px;
+                }
+
+                nav.mi-nav div.nav-wrapper ul#mobile-demo li a:active{
+                    background-color:#333;
+                    color:#FFF;
+                    border:1px solid #FFF;
+                }
+            }
+
+            nav.mi-nav div.nav-wrapper ul#mobile-demo li a{
+                background-color:#008bd4;
+                color:#FFF;
+                border:1px solid #FFF;
+            }
+            
+            #sidenav-overlay{
+                background-color: rgba(0,0,0,0.1);
+            }
+               p{
+            	text-align: justify;
+            }
         </style>
     </head>
     <body>
@@ -54,7 +94,7 @@
                     </a>
                     <ul class="menu-principal right hide-on-med-and-down">
                         <li>
-                            <a class="primero" href="sass.html">
+                            <a class="primero" href="index.html">
                                 <i class="material-icons">
                                     home
                                 </i>
@@ -62,7 +102,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="segundo" href="badges.html">
+                            <a class="segundo" href="nosotros.html">
                                 <i class="material-icons">
                                     people
                                 </i>
@@ -70,7 +110,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="tercero" href="sass.html">
+                            <a class="tercero" href="servicios.html">
                                 <i class="material-icons">
                                     settings
                                 </i>
@@ -78,7 +118,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="cuarto" href="badges.html">
+                            <a class="cuarto" href="eventos.html">
                                 <i class="material-icons">
                                     location_on
                                 </i>
@@ -86,7 +126,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="quinto" href="sass.html">
+                            <a class="quinto" href="descargas.html">
                                 <i class="material-icons">
                                     arrow_downward
                                 </i>
@@ -102,7 +142,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="septimo" href="badges.html">
+                            <a class="septimo" href="bolsa.html">
                                 <i class="material-icons">
                                     work
                                 </i>
@@ -112,32 +152,32 @@
                     </ul>
                     <ul class="side-nav" id="mobile-demo">
                         <li>
-                            <a class="primero" href="sass.html">
+                            <a class="primero" href="index.html">
                                 Inicio
                             </a>
                         </li>
                         <li>
-                            <a class="segundo" href="badges.html">
+                            <a class="segundo" href="nosotros.html">
                                 Quienes somos
                             </a>
                         </li>
                         <li>
-                            <a class="tercero" href="sass.html">
+                            <a class="tercero" href="servicios.html">
                                 Servicios
                             </a>
                         </li>
                         <li>
-                            <a class="cuarto" href="badges.html">
+                            <a class="cuarto" href="eventos.html">
                                 Eventos
                             </a>
                         </li>
                         <li>
-                            <a class="quinto" href="sass.html">
+                            <a class="quinto" href="descargas.html">
                                 Descarga
                             </a>
                         </li>
                         <li>
-                            <a class="sexto" href="badges.html">
+                            <a class="sexto" href="contacto.html">
                                 Contacto
                             </a>
                         </li>
