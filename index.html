@@ -8,6 +8,10 @@
         </title>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" rel="stylesheet"/>
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <script src="https://code.highcharts.com/highcharts.js">
+        </script>
+        <script src="https://code.highcharts.com/modules/exporting.js">
+        </script>
         <style>
             .mi-nav{
                 background-color: #fafafa;
@@ -78,6 +82,16 @@
             }
                p{
             	text-align: justify;
+            }
+            .titulo-principal{
+            	font-size: 2em;
+            	text-align: center;
+            }
+            .el-grafico{
+            	background-color: #e0f7fa;
+            }
+            .seccion-grafica{
+				background-color: #00BCD4;
             }
         </style>
     </head>
@@ -198,36 +212,120 @@
         </div>
         <div class="section white">
             <div class="row container">
-                <h3 class="header">
-                    Facturación electrónica – FEL
-                </h3>
-                <div class="col s12 m6 l6">
-                    <img alt="" class="responsive-img" src="http://itfase.com.mx/wp-content/uploads/2016/08/Facturacion.jpg">
-                    </img>
-                </div>
-                <div class="col s12 m6 l6">
-                    <p class="mi-texto grey-text text-darken-3 lighten-3">
-                        Facturación electrónica – FEL.  Somos distribuidores autorizados de Facturación Electrónica por FEL, teniendo la certificación para proporcionar el servicio de Facturación y la asesoría fiscal necesaria para esta actividad. Ofrecemos el servicio de facturación electrónica por portal o conexión remota, con el fin de incluirlos en nuestros sistemas informáticos para que nuestros clientes tenga la certeza de cumplir con lo que la ley fiscal marca, así como un mayor control de sus ventas. Pregunta también por nuestros servicios contables
-                    </p>
-                </div>
+                <p class="titulo-principal flow-text">
+                    ITFASE S.A de C.V. dedicada a solucionar problemas en Tecnologías de Información, ofreciéndole los siguientes servicios:
+                </p>
             </div>
         </div>
         <div class="section white">
-            <div class="row container">
-                <h3 class="header">
-                    Software a la Medida
-                </h3>
-                <div class="col s12 m6 l6">
-                    <p class="mi-texto grey-text text-darken-3 lighten-3">
-                        Este servicio está enfocado en crear soluciones informáticas personalizadas acorde a las necesidades de nuestros clientes. Diseñando bases de datos, aplicaciones locales, aplicaciones web y móviles, implementadas por  personal especializado en TI.
-                    </p>
-                    <p>
-                        Como ITFASE nos enfocamos en el Diseño del software, realizando un análisis a fondo de la problemática a resolver, buscando tomar en cuenta todas las variables, aun las que en el momento se cree no son necesarias o no se han tomado en cuenta durante el tiempo de implementación, esto hace que el software que desarrollamos sea mas que funcional, generando un valor importante en la operación de cada cliente.  Tenemos la idea de que el Software se convierte en un gasto cuando a corto tiempo se va a tener que revalorizar su diseño.
-                    </p>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="http://itfase.com.mx/wp-content/uploads/2016/08/Facturacion.jpg">
+                            </img>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">
+                                Software de Facturación
+                                <i class="material-icons right">
+                                    more_vert
+                                </i>
+                            </span>
+                            <p>
+                                <a href="#">
+                                    Nuestros servicios
+                                </a>
+                            </p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">
+                                Software de Facturación, Punto de Venta, Almacén y Administrativos.
+                                <i class="material-icons right">
+                                    close
+                                </i>
+                            </span>
+                            <p>
+                                Software de Facturación, Punto de Venta, Almacén y Administrativos. Estos sistemas te ayudaran a tener un mayor control de tu negocio, ofreciéndote las herramientas necesarias para tener la información de tu empresa en el instante que lo necesites, mayor control menor costo.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col s12 m6 l6">
-                    <img alt="" class="responsive-img" src="http://itfase.com.mx/wp-content/uploads/2015/07/sivent.jpg">
-                    </img>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="responsive-img activator" src="http://itfase.com.mx/wp-content/uploads/2016/08/Infra.jpg">
+                            </img>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">
+                                Diseño y mantenimiento.
+                                <i class="material-icons right">
+                                    more_vert
+                                </i>
+                            </span>
+                            <p>
+                                <a href="#">
+                                    Mantenimiento de Infraestructura
+                                </a>
+                            </p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">
+                                Diseño y mantenimiento
+                                <i class="material-icons right">
+                                    close
+                                </i>
+                            </span>
+                            <p>
+                                Tu compañía tiene que estar siempre funcionando, el tiempo es dinero, como sabemos esto, te ofrecemos mejorar tus tiempos de respuesta, implementando desde una computadora local, hasta una red donde puedas tener en tiempo real toda la información de tus sucursales, sin importar donde estén.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="responsive-img activator" src="http://itfase.com.mx/wp-content/uploads/2016/08/Facturacion.jpg">
+                            </img>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">
+                                Business intelligence
+                                <i class="material-icons right">
+                                    more_vert
+                                </i>
+                            </span>
+                            <p>
+                                <a href="#">
+                                    Business intelligence
+                                </a>
+                            </p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">
+                                Business intelligence
+                                <i class="material-icons right">
+                                    close
+                                </i>
+                            </span>
+                            <p>
+                                La información es lo más importante para el desarrollo de una compañía, por este motivo buscamos que nuestros clientes exploten al 100% su información ya sea de un sistema propio o con sistemas implementados por nuestros expertos. Generando reportes personalizados en Excel que sean dinámicos y de fácil manipulación adaptados a resolver las necesidades de cada cliente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section ">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="el-grafico" id="container" style="min-width: 310px; height: 400px; max-width: 700px; margin: 0 auto">
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="el-grafico" id="container2" style="min-width: 310px; height: 400px; max-width: 700px; margin: 0 auto">
+                    </div>
                 </div>
             </div>
         </div>
@@ -312,6 +410,130 @@
             	 $('.carousel.carousel-slider').carousel({full_width: true});
             	 $('.parallax').parallax();
             	 $(".button-collapse").sideNav();
+           	Highcharts.chart('container', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: 'Browser market shares January, 2015 to May, 2015'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Brands',
+                colorByPoint: true,
+                data: [{
+                    name: 'Microsoft Internet Explorer',
+                    y: 56.33
+                }, {
+                    name: 'Chrome',
+                    y: 24.03,
+                    sliced: true,
+                    selected: true
+                }, {
+                    name: 'Firefox',
+                    y: 10.38
+                }, {
+                    name: 'Safari',
+                    y: 4.77
+                }, {
+                    name: 'Opera',
+                    y: 0.91
+                }, {
+                    name: 'Proprietary or Undetectable',
+                    y: 0.2
+                }]
+            }]
+        });
+
+           	 Highcharts.chart('container2', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Efficiency Optimization by Branch'
+        },
+        xAxis: {
+            categories: [
+                'Seattle HQ',
+                'San Francisco',
+                'Tokyo'
+            ]
+        },
+        yAxis: [{
+            min: 0,
+            title: {
+                text: 'Employees'
+            }
+        }, {
+            title: {
+                text: 'Profit (millions)'
+            },
+            opposite: true
+        }],
+        legend: {
+            shadow: false
+        },
+        tooltip: {
+            shared: true
+        },
+        plotOptions: {
+            column: {
+                grouping: false,
+                shadow: false,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Employees',
+            color: 'rgba(165,170,217,1)',
+            data: [150, 73, 20],
+            pointPadding: 0.3,
+            pointPlacement: -0.2
+        }, {
+            name: 'Employees Optimized',
+            color: 'rgba(126,86,134,.9)',
+            data: [140, 90, 40],
+            pointPadding: 0.4,
+            pointPlacement: -0.2
+        }, {
+            name: 'Profit',
+            color: 'rgba(248,161,63,1)',
+            data: [183.6, 178.8, 198.5],
+            tooltip: {
+                valuePrefix: '$',
+                valueSuffix: ' M'
+            },
+            pointPadding: 0.3,
+            pointPlacement: 0.2,
+            yAxis: 1
+        }, {
+            name: 'Profit Optimized',
+            color: 'rgba(186,60,61,.9)',
+            data: [203.6, 198.8, 208.5],
+            tooltip: {
+                valuePrefix: '$',
+                valueSuffix: ' M'
+            },
+            pointPadding: 0.4,
+            pointPlacement: 0.2,
+            yAxis: 1
+        }]
+    });
     		});
         </script>
     </body>
